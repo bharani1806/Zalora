@@ -18,7 +18,7 @@ public class readxl_zalora {
 
 	
 	
-	//@DataProvider (name="zaloradata")
+	@DataProvider (name="zaloradata")
 	public  String[][] getdata(Method m) throws IOException {
 
 		String xlsheetname = m.getName();

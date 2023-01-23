@@ -10,8 +10,8 @@ import base.basetest;
 public class zaloratest extends basetest {
 	
 	
-	@Test
-	public static void logintest() throws InterruptedException
+	@Test(dataProviderClass = read_xl2.class, dataProvider="xldata")
+	public static void logintest(String username, String password) throws InterruptedException
 	{
 		Thread.sleep(5000);
 	driver.manage().window().maximize();
@@ -26,10 +26,10 @@ public class zaloratest extends basetest {
 	driver.findElement(By.id(loc.getProperty("login_click"))).click();
 	
 	//login_email
-    driver.findElement(By.id(loc.getProperty("login_email"))).sendKeys("bharani9a10a@gmail.com");
+    driver.findElement(By.id(loc.getProperty("login_email"))).sendKeys(username);
 	
 	//login_pwd
-	driver.findElement(By.id(loc.getProperty("login_pwd"))).sendKeys("12345bharani");
+	driver.findElement(By.id(loc.getProperty("login_pwd"))).sendKeys(password);
 	
 	//login_nxt_button
 	driver.findElement(By.xpath(loc.getProperty("login_nxt_button"))).click();
@@ -92,8 +92,8 @@ public class zaloratest extends basetest {
 	driver.findElement(By.xpath(loc.getProperty("checkout_signin"))).click();
 	
 	//checkout_continue_btn 
-    Thread.sleep(2000);
-	driver.findElement(By.xpath(loc.getProperty("checkout_continue_btn"))).click();
+    //Thread.sleep(2000);
+	//driver.findElement(By.xpath(loc.getProperty("checkout_continue_btn"))).click();
 	}
 	
 
