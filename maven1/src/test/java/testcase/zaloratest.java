@@ -11,11 +11,11 @@ public class zaloratest extends basetest {
 	
 	
 	@Test
-	public static void zalora() throws InterruptedException
+	public static void logintest() throws InterruptedException
 	{
-		
+		Thread.sleep(5000);
 	driver.manage().window().maximize();
-	Thread.sleep(3000);
+	
 	
 	//login_hover
 	WebElement login1 = driver.findElement(By.id(loc.getProperty("login_hover")));
@@ -26,7 +26,7 @@ public class zaloratest extends basetest {
 	driver.findElement(By.id(loc.getProperty("login_click"))).click();
 	
 	//login_email
-	driver.findElement(By.id(loc.getProperty("login_email"))).sendKeys("bharani9a10a@gmail.com");
+    driver.findElement(By.id(loc.getProperty("login_email"))).sendKeys("bharani9a10a@gmail.com");
 	
 	//login_pwd
 	driver.findElement(By.id(loc.getProperty("login_pwd"))).sendKeys("12345bharani");

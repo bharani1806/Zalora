@@ -5,9 +5,9 @@
     <classes>
       <class name="testcase.zaloratest">
         <methods>
+          <include name="logintest"/>
           <include name="setup"/>
           <include name="teardowm"/>
-          <include name="zalora"/>
         </methods>
       </class> <!-- testcase.zaloratest -->
     </classes>

@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
  
 public class basetest {
@@ -21,6 +22,8 @@ public class basetest {
 
 		@BeforeTest
 		public void setup() throws IOException {
+			
+			//this.driver =
 			if (driver==null) {
 				 fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
 				 fr1 = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\locators.properties");
@@ -31,12 +34,13 @@ public class basetest {
 			}
 			if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver();
+				//System.setProperty("webdriver.chrome.driver", null);
 				driver.get(prop.getProperty("testurl"));
 			}
 		}
 		@AfterTest
 			public void teardowm() {
-				driver.close();
+				//driver.close();
 				System.out.println("teardown successfull");
 				
 			
