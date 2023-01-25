@@ -23,7 +23,7 @@ public class basetest {
 		@BeforeTest
 		public void setup() throws IOException {
 			
-			//this.driver =
+			
 			if (driver==null) {
 				 fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
 				 fr1 = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\locators.properties");
@@ -40,7 +40,7 @@ public class basetest {
 		}
 		@AfterTest
 			public void teardowm() {
-				//driver.close();
+				driver.close();
 				System.out.println("teardown successfull");
 				
 			

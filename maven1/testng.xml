@@ -2,16 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  
-  <groups>
-  <run>
-  
-  <include name="smoke"></include>
-  </run>
-  
-  </groups>
-  <classes>
-  <class name="test_ng."/>
-  </classes>
+    <classes>
+      <class name="testcase.zaloratest"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

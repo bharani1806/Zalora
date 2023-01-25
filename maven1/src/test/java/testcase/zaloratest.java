@@ -10,13 +10,12 @@ import base.basetest;
 public class zaloratest extends basetest {
 	
 	
-	@Test(dataProviderClass = read_xl2.class, dataProvider="xldata")
+	@Test (dataProviderClass = newxl.class , dataProvider = "login")
 	public static void logintest(String username, String password) throws InterruptedException
 	{
 		Thread.sleep(5000);
 	driver.manage().window().maximize();
-	
-	
+	TakesScreenshot
 	//login_hover
 	WebElement login1 = driver.findElement(By.id(loc.getProperty("login_hover")));
 	Actions ac = new Actions(driver);
@@ -66,10 +65,10 @@ public class zaloratest extends basetest {
 
 	
 	//select_size
-	//driver.findElement(By.xpath(loc.getProperty("select_size"))).click();
+	driver.findElement(By.xpath(loc.getProperty("select_size"))).click();
 	
 	//add_to_cart
-	//driver.findElement(By.id(loc.getProperty("add_to_cart"))).click();
+	driver.findElement(By.id(loc.getProperty("add_to_cart"))).click();
 	
     //checkout_icon
 	driver.findElement(By.id(loc.getProperty("checkout_icon"))).click();
