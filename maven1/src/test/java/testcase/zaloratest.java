@@ -15,7 +15,8 @@ public class zaloratest extends basetest {
 	{
 		Thread.sleep(5000);
 	driver.manage().window().maximize();
-	TakesScreenshot
+	
+	
 	//login_hover
 	WebElement login1 = driver.findElement(By.id(loc.getProperty("login_hover")));
 	Actions ac = new Actions(driver);

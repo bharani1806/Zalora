@@ -2,36 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-24T15:39:34 IST" name="Suite" finished-at="2023-01-24T15:40:36 IST" duration-ms="61944">
+  <suite started-at="2023-01-30T01:06:27 IST" name="Default suite" finished-at="2023-01-30T01:07:41 IST" duration-ms="73603">
     <groups>
     </groups>
-    <test started-at="2023-01-24T15:39:34 IST" name="Test" finished-at="2023-01-24T15:40:36 IST" duration-ms="61944">
-      <class name="testcase.zaloratest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.zaloratest@6c80d78a]" started-at="2023-01-24T15:39:34 IST" name="setup" finished-at="2023-01-24T15:39:43 IST" duration-ms="9178" status="PASS">
+    <test started-at="2023-01-30T01:06:27 IST" name="Default test" finished-at="2023-01-30T01:07:41 IST" duration-ms="73603">
+      <class name="hilton.hilton_test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:hilton.hilton_test@52e6fdee]" started-at="2023-01-30T01:06:27 IST" name="setup" finished-at="2023-01-30T01:06:39 IST" duration-ms="11369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:testcase.zaloratest@6c80d78a]" started-at="2023-01-24T15:39:44 IST" name="logintest" data-provider="login" finished-at="2023-01-24T15:40:36 IST" duration-ms="51575" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bharani9a10a@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345bharani]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="main()[pri:0, instance:hilton.hilton_test@52e6fdee]" started-at="2023-01-30T01:06:39 IST" name="main" finished-at="2023-01-30T01:07:41 IST" duration-ms="62187" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="teardowm()[pri:0, instance:testcase.zaloratest@6c80d78a]" started-at="2023-01-24T15:40:36 IST" name="teardowm" finished-at="2023-01-24T15:40:36 IST" duration-ms="162" status="PASS">
+        </test-method> <!-- main -->
+        <test-method is-config="true" signature="teardowm()[pri:0, instance:hilton.hilton_test@52e6fdee]" started-at="2023-01-30T01:07:41 IST" name="teardowm" finished-at="2023-01-30T01:07:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardowm -->
-      </class> <!-- testcase.zaloratest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- hilton.hilton_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

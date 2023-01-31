@@ -1,6 +1,5 @@
 package base;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -8,7 +7,6 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
  
 public class basetest {

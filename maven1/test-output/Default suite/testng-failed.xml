@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.zaloratest">
+      <class name="hilton.hilton_test">
         <methods>
-          <include name="logintest" invocation-numbers="0"/>
-          <include name="setup"/>
           <include name="teardowm"/>
+          <include name="main"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testcase.zaloratest -->
+      </class> <!-- hilton.hilton_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
